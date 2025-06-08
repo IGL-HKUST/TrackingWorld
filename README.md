@@ -21,7 +21,7 @@ Arxiv, 2025.
 
 ![Watch the teaser](assets/vis1_00.png)
 
-![Watch the video](assets/TrackingWorld_video220250608-224840%5B00h00m00s-00h00m20s%5D.gif)
+![Watch the video](assets/TrackingWorld_video.gif)
 
 ## 🔨TODO List:
 - [] Release demo.
