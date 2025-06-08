@@ -20,7 +20,8 @@ Arxiv, 2025.
 **TrackingWorld** estimates world-centric dense tracking results from monocular videos. Our model can accurately estimate camera poses and achieve disentangled 3D track modeling of static and dynamic components, not just limited to one foreground dynamic object. 
 
 ![Watch the teaser](assets/vis1_00.png)
-https://github.com/jiah-cloud/upload-video/blob/main/TrackingWorld_video220250608-224840.mp4
+
+![Watch the video](assets/TrackingWorld_video220250608-224840%5B00h00m00s-00h00m20s%5D.gif)
 
 ## 🔨TODO List:
 - [] Release demo.
