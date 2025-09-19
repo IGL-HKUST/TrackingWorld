@@ -1,4 +1,4 @@
-## ___***TrackingWorld: World-centric Monocular 3D Tracking of Almost All Pixels***___
+## ___***[NeurIPS 2025]TrackingWorld: World-centric Monocular 3D Tracking of Almost All Pixels***___
 
 ![Version](https://img.shields.io/badge/version-1.0.2-blue)  <a href=''><img src='https://img.shields.io/badge/arXiv-xxxx.xxxx-b31b1b.svg'></a>  <a href=''><img src='https://img.shields.io/badge/Project-Page-Green'></a>  
 
@@ -35,4 +35,5 @@
 ## 📄 Citation
 
 Coming soon.
+
 
