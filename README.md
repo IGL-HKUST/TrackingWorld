@@ -63,9 +63,6 @@ Find your API key [here](https://platform.openai.com/api-keys).
 
 ---
 
-That's a great structure for a GitHub README demonstration section\! It's clear, comprehensive, and logically separates the execution command from the resulting file organization.
-
-Here is a slightly enhanced and polished version of the demonstration section, integrating the file paths into the directory structure for better visual clarity and ensuring all tags are fully described.
 
 ## 🚀 Demo
 
