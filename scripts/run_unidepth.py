@@ -47,7 +47,6 @@ model = model.to(device)
 start_time = time.time()
 
 for video in tqdm(videos, desc="Predicting Unidepth"):
-  if video in ['rollerblade']:
     OUTPUT_BASE = os.path.join(BASE, video, "unidepth")
 
     if args.use_gt_K:

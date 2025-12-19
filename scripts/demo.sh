@@ -40,7 +40,8 @@ python "${CODE_ROOT}/scripts/run_efep.py" \
 # ================= 4. Segmentation: DINO & SAM2 =================
 echo "[Step 4/6] Running DINO & SAM2..."
 python "${CODE_ROOT}/scripts/run_dino_sam2.py" \
-    --workdir "$WORKDIR"
+    --workdir "$WORKDIR" \
+    --sam2-checkpoint "${CODE_ROOT}/checkpoints/sam2.1_hiera_large.pt" \
 
 # ================= 5. Video Segmentation: DEVA =================
 echo "[Step 5/6] Running DEVA..."

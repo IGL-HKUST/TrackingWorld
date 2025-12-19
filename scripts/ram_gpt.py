@@ -94,7 +94,7 @@ if __name__ == "__main__":
     #use glob to read all img files in the folder that ends with .png or .jpg
     for video in tqdm(videos):
 
-        img_dir = os.path.join(dataset_path, video, 'rgb')
+        img_dir = os.path.join(dataset_path, video, 'color')
 
         img_files = sorted(glob.glob(os.path.join(img_dir, '*.png')) + glob.glob(os.path.join(img_dir, '*.jpg')))
 

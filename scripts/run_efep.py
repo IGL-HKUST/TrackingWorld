@@ -68,7 +68,7 @@ def get_args_parser():
     parser.add_argument("--video_path", type=str, default="./demo_data", help="Root directory containing multiple video folders")
     parser.add_argument("--output_path", type=str, default="./results")
     parser.add_argument("--use_depthcrafter", action="store_true", help="use DepthCrafter as input depth")
-    parser.add_argument("--viz_sparse", type=bool, default=True, help="visualize sparse tracking")
+    parser.add_argument("--viz_sparse", type=bool, default=False, help="visualize sparse tracking")
     parser.add_argument("--downsample", type=int, default=4, help="downsample factor for sparse tracking")
     parser.add_argument("--upsample_factor", type=int, default=4, help="model upsample factor")
     parser.add_argument("--T_end", type=int, default=31, help="number of frames to process")
@@ -142,7 +142,6 @@ def main():
     print(f"Found {len(video_list)} videos in {args.video_path}")
 
     for video_name in tqdm(video_list, desc="Processing Videos"):
-      if video_name in ['rollerblade']:
         full_video_dir = os.path.join(args.video_path, video_name)
         
         # Define output directory for this specific video

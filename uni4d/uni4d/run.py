@@ -140,7 +140,7 @@ def main():
         videos = sorted(os.listdir(f"{opt.workdir}"))
 
         for i, video in enumerate(videos):
-          if video in ['libby', 'dog']:
+
             print(f"Working on {video}", flush=True)
 
             opt.video_name = video

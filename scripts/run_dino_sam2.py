@@ -15,6 +15,8 @@ import supervision as sv
 from pathlib import Path
 from supervision.draw.color import ColorPalette
 
+sys.path.insert(0, 'submodules/Grounded-SAM-2')
+
 from utils.supervision_utils import CUSTOM_COLOR_MAP
 from PIL import Image
 from sam2.build_sam import build_sam2
@@ -74,10 +76,9 @@ def id_to_colors(id): # id to color
 videos = sorted(os.listdir(INPUT_DIR))
 
 for i,video in tqdm(enumerate(videos)):
-  #if video in ['tapvid3d_634378055350569306_280_000_300_000_3_qZfnKf-L0RkIHWLqwNAG5Q']:
     work_dir = os.path.join(INPUT_DIR, video)
 
-    image_dir_path = os.path.join(work_dir, "rgb")
+    image_dir_path = os.path.join(work_dir, "color")
 
     idx_to_id = [i for i in range(256*256*256)]
     np.random.shuffle(idx_to_id) # mapping to randomize idx to id to get random color
@@ -111,7 +112,7 @@ for i,video in tqdm(enumerate(videos)):
         results = processor.post_process_grounded_object_detection(
             outputs,
             inputs.input_ids,
-            box_threshold=0.3,
+            threshold=0.3,
             text_threshold=0.3,
             target_sizes=[image_pil.size[::-1]]
         )
