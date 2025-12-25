@@ -38,8 +38,8 @@ cd TrackingWorld
 An installation script is provided and tested with **CUDA Toolkit 12.1** and **Python 3.10**.
 
 ```bash
-conda create -n uni4d python=3.10
-conda activate uni4d
+conda create -n trackingworld python=3.10
+conda activate trackingworld
 bash scripts/install.sh
 ```
 
